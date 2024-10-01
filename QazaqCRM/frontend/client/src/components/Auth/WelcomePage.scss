@@ -1,0 +1,59 @@
+@import '../../Scss/utils/vars';
+
+.WelcomePage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+
+	.branding {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 30px;
+
+		.brand-name {
+			font-size: $mainFontSize;
+			color: black;
+			margin-top: 10px;
+		}
+	}
+
+	.title {
+		font:
+			600 66px 'Montserrat',
+			sans-serif;
+		text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+		margin-bottom: 20px;
+	}
+
+	.Login__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.error-message {
+		color: red;
+		margin-top: 15px;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.register-button {
+		background-color: $primaryColor;
+		color: rgb(0, 0, 0);
+		font-size: 16px;
+		border: none;
+		border-radius: 5px;
+		padding: 10px 20px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: darken($primaryColor, 10%);
+		}
+	}
+}

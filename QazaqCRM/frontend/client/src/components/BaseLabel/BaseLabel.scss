@@ -1,0 +1,8 @@
+@import '../../Scss/utils/vars.scss';
+
+.base-label {
+	font-size: $mainFontSize;
+	color: $label-color;
+	margin-right: 20px;
+	text-align: right;
+}

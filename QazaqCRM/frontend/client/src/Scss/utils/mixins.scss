@@ -1,0 +1,10 @@
+@function rem($pixels, $context: $mainFontSize) {
+	$pixels: if(unitless($pixels), $pixels * 1px, $pixels);
+	$context: if(unitless($context), $context * 1px, $context);
+	@return $pixels / $context * 1rem;
+}
+
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}

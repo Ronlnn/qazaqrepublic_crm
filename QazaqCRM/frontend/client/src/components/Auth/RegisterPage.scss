@@ -1,0 +1,84 @@
+@import '../../Scss/utils/vars.scss';
+
+.RegisterPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #f7f7f7;
+}
+
+.Register__form {
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	width: 90%;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&:hover {
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+	}
+
+	.title {
+		font:
+			600 60px 'Montserrat',
+			sans-serif;
+		text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	.field {
+		margin-bottom: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.password-field {
+		width: 100%;
+		text-align: center;
+	}
+
+	.BaseButton {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+}
+
+.success-message {
+	margin-top: 15px;
+	color: #28a745;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.error-message {
+	margin-top: 15px;
+	color: #dc3545;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.register-button {
+	background-color: transparent;
+	color: #007bff;
+	border: none;
+	cursor: pointer;
+	text-decoration: underline;
+
+	&:hover {
+		color: #0056b3;
+		text-decoration: none;
+	}
+}
